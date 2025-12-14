@@ -1,6 +1,3 @@
-/**
- * @author mrdoob / http://mrdoob.com/
- */
 interface PerformanceMemory {
     usedJSHeapSize: number;
     jsHeapSizeLimit: number;
@@ -14,6 +11,10 @@ declare global {
         performance: PerformanceWithMemory;
     }
 }
+/**
+ * @author mrdoob / http://mrdoob.com/
+ * @author Aaron Beall / https://abeall.com
+ */
 declare class Stats {
     REVISION: number;
     dom: HTMLDivElement;
@@ -54,5 +55,5 @@ declare class Panel {
     constructor(name: string, fg: string, bg: string);
     update(value: number, maxValue: number): void;
 }
-export { Stats as default };
+export { Stats as default, Stats, Panel };
 //# sourceMappingURL=Stats.d.ts.map

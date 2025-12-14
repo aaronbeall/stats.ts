@@ -1,5 +1,6 @@
 /**
  * @author mrdoob / http://mrdoob.com/
+ * @author Aaron Beall / https://abeall.com
  */
 class Stats {
     constructor() {
@@ -108,5 +109,5 @@ class Panel {
     }
 }
 
-export { Stats as default };
+export { Panel, Stats, Stats as default };
 //# sourceMappingURL=stats.module.js.map
