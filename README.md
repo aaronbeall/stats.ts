@@ -1,7 +1,7 @@
-stats.js
+stats.ts
 ========
 
-#### JavaScript Performance Monitor ####
+#### JavaScript Performance Monitor - TypeScript Edition ####
 
 This class provides a simple info box that will help you monitor your code performance.
 
