@@ -1,15 +1,15 @@
 {
   "name": "fps.ts",
-  "version": "0.18.1",
+  "version": "0.18.2",
   "description": "JavaScript Performance Monitor - TypeScript Edition",
-  "main": "build/stats.js",
-  "module": "build/stats.module.js",
+  "main": "build/fps.js",
+  "module": "build/fps.module.js",
   "types": "build/Stats.d.ts",
   "exports": {
     ".": {
       "types": "./build/Stats.d.ts",
-      "import": "./build/stats.module.js",
-      "require": "./build/stats.js"
+      "import": "./build/fps.module.js",
+      "require": "./build/fps.js"
     }
   },
   "repository": {
