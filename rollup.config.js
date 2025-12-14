@@ -1,17 +1,26 @@
+import typescript from '@rollup/plugin-typescript';
+
 export default {
-	input: 'src/Stats.js',
+	input: 'src/Stats.ts',
 	output: [
 		{
 			format: 'umd',
 			name: 'Stats',
 			file: 'build/stats.js',
-			indent: '\t'
+			sourcemap: true
 		},
 		{
 			format: 'es',
 			name: 'Stats',
 			file: 'build/stats.module.js',
-			indent: '\t'
+			sourcemap: true
 		}
+	],
+	plugins: [
+		typescript({
+			tsconfig: './tsconfig.json',
+			declaration: true,
+			declarationDir: './build'
+		})
 	]
 };
