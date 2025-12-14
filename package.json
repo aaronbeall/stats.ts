@@ -1,6 +1,6 @@
 {
   "name": "fps.ts",
-  "version": "0.18.3",
+  "version": "0.18.4",
   "description": "JavaScript Performance Monitor - TypeScript Edition",
   "main": "build/fps.js",
   "module": "build/fps.module.js",
