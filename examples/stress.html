@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>fps.ts - stress test</title>
-		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-		<style>
-			body {
-				margin: 0px;
-				overflow: hidden;
-			}
-		</style>
-	</head>
-	<body>
-		<script src="../build/fps.min.js"></script>
-		<script>
 
-			const array = [];
+<head>
+	<title>fps.ts - stress test</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<style>
+		body {
+			margin: 0px;
+			overflow: hidden;
+		}
+	</style>
+</head>
 
-			for ( let i = 0; i < 500; i ++ ) {
+<body>
+	<script src="../build/fps.min.js"></script>
+	<script>
 
-				const stats = new Stats();
-				stats.dom.style.position = 'relative';
-				stats.dom.style.float = 'left';
-				document.body.appendChild( stats.dom );
+		const array = [];
 
-				array.push( stats );
+		for (let i = 0; i < 500; i++) {
 
-			}
+			const stats = new Stats();
+			stats.dom.style.position = 'relative';
+			stats.dom.style.float = 'left';
+			document.body.appendChild(stats.dom);
 
-			function animate() {
+			array.push(stats);
 
-				for ( let i = 0; i < array.length; i ++ ) {
+		}
 
-					const stats = array[ i ];
-					stats.update();
+		function animate() {
 
-				}
+			for (let i = 0; i < array.length; i++) {
 
-				requestAnimationFrame( animate );
+				const stats = array[i];
+				stats.update();
 
 			}
 
-			animate();
+			requestAnimationFrame(animate);
 
-		</script>
-	</body>
+		}
+
+		animate();
+
+	</script>
+</body>
+
 </html>
