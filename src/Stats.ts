@@ -20,6 +20,8 @@ declare global {
  */
 class Stats {
 
+  static Panel: typeof Panel;
+
   REVISION = 18;
   dom: HTMLDivElement;
   domElement: HTMLDivElement; // Backwards Compatibility
@@ -212,4 +214,6 @@ class Panel {
 
 }
 
-export { Stats as default, Stats, Panel };
+Stats.Panel = Panel;
+
+export default Stats;
