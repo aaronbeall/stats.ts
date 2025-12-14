@@ -16,7 +16,7 @@ declare global {
 
 /**
  * @author mrdoob / http://mrdoob.com/
- * @author Aaron Beall / https://github.com/aaronbeall
+ * @author Aaron Beall / https://abeall.com
  */
 class Stats {
 
