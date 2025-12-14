@@ -19,6 +19,13 @@ This class provides a simple info box that will help you monitor your code perfo
 ![custom.png](https://raw.githubusercontent.com/aaronbeall/stats.ts/master/files/custom.png)
 
 
+### Examples ###
+
+* [Basic](https://aaronbeall.github.io/stats.ts/examples/basic.html)
+* [Custom Panel](https://aaronbeall.github.io/stats.ts/examples/custom.html)
+* [Stress Test](https://aaronbeall.github.io/stats.ts/examples/stress.html)
+
+
 ### Installation ###
 ```bash
 npm install stats.js
